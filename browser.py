@@ -2,7 +2,6 @@ import socket
 import ssl
 from typing import Dict, Tuple
 
-
 Headers = Dict[str, str]
 Body = str
 

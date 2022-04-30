@@ -5,5 +5,8 @@
   "python.linting.mypyEnabled": true,
   "python.linting.mypyArgs": [
     "--strict"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
 }
