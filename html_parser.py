@@ -4,7 +4,7 @@ from typing import Dict, List, Tuple
 
 
 class Text:
-    def __init__(self, text: str, parent: Node) -> None:
+    def __init__(self, text: str, parent: Node):
         self.text = text
         self.children: List[Node] = []
         self.parent = parent
@@ -14,9 +14,7 @@ class Text:
 
 
 class Element:
-    def __init__(
-        self, tag: str, attributes: Dict[str, str], parent: Node | None
-    ) -> None:
+    def __init__(self, tag: str, attributes: Dict[str, str], parent: Node | None):
         self.tag = tag
         self.attributes = attributes
         self.children: List[Node] = []
@@ -37,7 +35,7 @@ def print_tree(node: Node, indent: int = 0) -> None:
 
 
 class HTMLParser:
-    def __init__(self, body: str) -> None:
+    def __init__(self, body: str):
         self.body = body
         self.unfinished: List[Element] = []
 
